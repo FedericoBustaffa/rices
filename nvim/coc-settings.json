@@ -1,0 +1,10 @@
+{
+  "coc.source.vimtex.filetypes": ["tex", "plaintex"],
+  "coc.preferences.formatOnSaveFileTypes": [
+    "python",
+    "latex",
+    "C",
+    "C++"
+  ],
+  "snippets.ultisnips.pythonPrompt": false
+}
