@@ -52,14 +52,17 @@ return packer.startup(function(use)
 	-- LaTeX
 	use { "lervag/vimtex" }
 
-	-- Markdown
-	use { "iamcco/markdown-preview.nvim", run = 'cd app && yarn install', cmd = 'MarkdownPreview' }
+	-- Airline
+	use { "vim-airline/vim-airline" }
 
 	-- Telescope
 	use { "nvim-telescope/telescope.nvim", tag = '0.1.1' }
 
 	-- NerdTree
 	use { "preservim/nerdtree" }
+
+	-- Coc
+	use { "neoclide/coc.nvim", branch = "release" }
 
 	-- Terminal
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()

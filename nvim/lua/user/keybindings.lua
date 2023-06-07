@@ -73,3 +73,12 @@ keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 -- NERDTree
 keymap("n", "<leader>n", ":NERDTreeToggle<CR>", opts)
 
+-- ToggleTerm
+keymap("n", "<leader>t", ":ToggleTerm<CR>", opts)
+
+-- Coc Autocompletions
+coc_opts = { silent = true, noremap = true, expr = true, replace_keycodes = false }
+
+keymap("i", "<Tab>", [[pumvisible() ? coc#_select_confirm() : "<Tab>"]], coc_opts)
+keymap("i", "<c-space>", [[coc#refresh()]], coc_opts)
+
