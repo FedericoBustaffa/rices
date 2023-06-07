@@ -51,6 +51,14 @@ return packer.startup(function(use)
 	-- LaTeX
 	use { "lervag/vimtex" }
 
+	-- Telescope
+	use { "nvim-telescope/telescope.nvim", tag = '0.1.1' }
+
+	-- terminal
+	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+		require("toggleterm").setup()
+	end}
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

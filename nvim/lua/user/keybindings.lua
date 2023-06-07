@@ -69,3 +69,7 @@ keymap("n", "<leader>w", ":write<CR>", opts)
 
 -- navigate between buffers
 keymap("n", "<leader><tab>", "<C-^>", opts)
+
+-- Telescope find file mode
+keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
+
