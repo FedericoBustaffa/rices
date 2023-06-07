@@ -45,9 +45,6 @@ keymap("n", "<C-Up>", "<C-w>k", opts)
 -- show all buffers and let user choose one 
 keymap("n", "<leader>i", ":ls<CR>:b<Space>", opts)
 
--- explorer
-keymap("n", "<leader>e", ":Lex<CR>", opts)
-
 -- indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
@@ -72,4 +69,7 @@ keymap("n", "<leader><tab>", "<C-^>", opts)
 
 -- Telescope find file mode
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
+
+-- NERDTree
+keymap("n", "<leader>n", ":NERDTreeToggle<CR>", opts)
 

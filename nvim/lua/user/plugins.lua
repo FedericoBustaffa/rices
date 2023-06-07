@@ -42,6 +42,7 @@ packer.init({
 return packer.startup(function(use)
 	use { "wbthomason/packer.nvim" } -- Have packer manage itself
 	use { "nvim-lua/plenary.nvim" } -- Useful lua functions used by lots of plugins
+	use { "nvim-lua/popup.nvim" } -- Lua support
 
 	-- Colorschemes
 	use { "folke/tokyonight.nvim" }
@@ -51,10 +52,16 @@ return packer.startup(function(use)
 	-- LaTeX
 	use { "lervag/vimtex" }
 
+	-- Markdown
+	use { "iamcco/markdown-preview.nvim", run = 'cd app && yarn install', cmd = 'MarkdownPreview' }
+
 	-- Telescope
 	use { "nvim-telescope/telescope.nvim", tag = '0.1.1' }
 
-	-- terminal
+	-- NerdTree
+	use { "preservim/nerdtree" }
+
+	-- Terminal
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
 		require("toggleterm").setup()
 	end}
