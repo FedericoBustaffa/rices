@@ -48,6 +48,8 @@ return packer.startup(function(use)
 	use { "folke/tokyonight.nvim" }
 	use { "lunarvim/darkplus.nvim" }
 	use { "ellisonleao/gruvbox.nvim" }
+	-- use { "rafi/awesome-vim-colorschemes" }
+	use { "tribela/vim-transparent" }
 
 	-- LaTeX
 	use { "lervag/vimtex" }

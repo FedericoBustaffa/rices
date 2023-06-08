@@ -130,6 +130,11 @@ _G.packer_plugins = {
     path = "/home/federico/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
   },
+  ["vim-transparent"] = {
+    loaded = true,
+    path = "/home/federico/.local/share/nvim/site/pack/packer/start/vim-transparent",
+    url = "https://github.com/tribela/vim-transparent"
+  },
   vimtex = {
     loaded = true,
     path = "/home/federico/.local/share/nvim/site/pack/packer/start/vimtex",
